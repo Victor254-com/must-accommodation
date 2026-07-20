@@ -640,11 +640,11 @@ function handleLogin(){
         return;
     }
     if(!user.endsWith("/2026") && !user.endsWith("/26")){
-        alertDiv.innerHTML = "<div class='alert alert-error'>Please enter a valid Admission Number ending with /2026 or /26</div>";
+        alertDiv.innerHTML = "<div class='alert alert-error'>Wrong username or password</div>";
         return;
     }
     if(user !== pass){
-        alertDiv.innerHTML = "<div class='alert alert-error'>Username and Password must both be your Admission Number</div>";
+        alertDiv.innerHTML = "<div class='alert alert-error'>Wrong username or password</div>";
         return;
     }
     if(bookedStudents[user]){
